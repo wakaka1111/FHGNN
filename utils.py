@@ -37,7 +37,7 @@ def seed_everything(seed=616):
 
 
 def load_data(dataset_str):
-    data_mat = scio.loadmat("../data/{}.mat".format(dataset_str))
+    data_mat = scio.loadmat("../{}.mat".format(dataset_str))
     h = data_mat['h']
     X = data_mat['X']
     labels = data_mat['labels']
